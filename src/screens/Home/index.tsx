@@ -1,8 +1,11 @@
 import React from "react";
 
 import { View, Text } from "react-native";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { MessageList } from "../../components/MessageList";
+import { SendMessageForm } from "../../components/SendMessageForm";
+import { SignInBox } from "../../components/SignInBox";
 import { styles } from "./styles";
 
 export function Home() {
@@ -10,6 +13,7 @@ export function Home() {
     <View style={styles.container}>
       <Header />
       <MessageList />
+      <SendMessageForm />
     </View>
   );
 }
